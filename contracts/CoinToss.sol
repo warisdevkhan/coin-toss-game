@@ -291,8 +291,4 @@ contract CoinToss {
         bool side = coinFlip == 1 ? true : false;
         return side;
     }
-
-    function withdraw() public {
-        payable(msg.sender).transfer(address(this).balance);
-    }
 }
